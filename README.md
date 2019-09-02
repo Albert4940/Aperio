@@ -27,10 +27,12 @@ Aperio is the place you go to buy any local paintings or craftsmanship made with
 * User can see vendors by region
 * User can browse a vendor's products
 * User can add product to cart
+* User can see cart contents
 * User can pay for product via external payment providers.
 * Vendor can add product(with product details)
 * Vendor can create an account
-* Vendor can add account informations(Location, name, profession...) 
+* Vendor can login to account
+* Vendor can add account informations(Location, name, profession...) within account creation
 
 **Optional Nice-to-have Stories**
 
@@ -38,34 +40,52 @@ Aperio is the place you go to buy any local paintings or craftsmanship made with
 * User can search by category or region
 * User can search for a specific vendor
 * User can signup/login to app
+* User stay connect after leaving the app(session)
 * User can save favorited items
+* 
 
 
 ### 2. Screen Archetypes
 
-* [list first screen here]
-   * [list associated required story here]
-   * ...
-* [list second screen here]
-   * [list associated required story here]
-   * ...
+* Login screen
+   * Vendor can login to account
+* Registration screen
+   * Vendor can create an account
+* Mapview screen
+   * User can see vendors by region
+* Stream screen
+   * user can see cart contents
+* Detail screen
+   * User can browse a vendor's products
+   * User can pay for product via external payment providers.
+* Creation screen
+   * Vendor can add product(with product details)
+   * User can add product to cart
+* Profile screen
+   * Vendor can add account informations(Location, name, profession...) within account creation 
 
-### 3. Navigation
+
+### 3. Navigation - User
 
 **Tab Navigation** (Tab to Screen)
 
-* [fill out your first tab]
-* [fill out your second tab]
-* [fill out your third tab]
+* Mapview screen
 
 **Flow Navigation** (Screen to Screen)
 
-* [list first screen here]
-   * [list screen navigation here]
-   * ...
-* [list second screen here]
-   * [list screen navigation here]
-   * ...
+* Login
+   * Mapview screen
+   * Registration screen
+* Registration
+   * Mapview screen
+   * Login screen
+* Mapview screen
+   * Vendor detail screen
+   * Cart screen
+   * (To user info page, but this is a later feature)
+* Search screen
+    * Product detail screen
+    * Mapview screen
 
 ## Wireframes
 [Add picture of your hand sketched wireframes in this section]
