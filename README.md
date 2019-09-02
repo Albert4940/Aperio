@@ -24,7 +24,8 @@ Aperio is the place you go to buy any local paintings or craftsmanship made with
 ### 1. User Stories (Required and Optional)
 
 **Required Must-have Stories**
-* User can see vendors by region
+
+* Nearby vendors can be found on a map
 * User can browse a vendor's products
 * User can add product to cart
 * User can see cart contents
@@ -36,13 +37,11 @@ Aperio is the place you go to buy any local paintings or craftsmanship made with
 
 **Optional Nice-to-have Stories**
 
-* Nearby vendors can be found on a map
 * User can search by category or region
 * User can search for a specific vendor
 * User can signup/login to app
 * User stay connect after leaving the app(session)
 * User can save favorited items
-* 
 
 
 ### 2. Screen Archetypes
@@ -52,7 +51,7 @@ Aperio is the place you go to buy any local paintings or craftsmanship made with
 * Registration screen
    * Vendor can create an account
 * Mapview screen
-   * User can see vendors by region
+    * Nearby vendors can be found on a map
 * Stream screen
    * user can see cart contents
 * Detail screen
