@@ -1,4 +1,4 @@
-# AP&Eacute;RIO
+# Ap&eacute;rio
 
 ## Table of Contents
 1. [Overview](#Overview)
@@ -86,6 +86,33 @@ Aperio is the place you go to buy any local paintings or craftsmanship made with
 * Search screen
     * Product detail screen
     * Mapview screen
+
+### 4. Navigation - Vendor
+
+**Tab Navigation** (Tab to Screen)
+
+* Mapview screen
+* MyProduct screen
+
+**Flow Navigation** (Screen to Screen)
+
+* Login
+   * Mapview screen
+   * Registration screen
+* Registration
+   * Mapview screen
+   * Login screen
+* Mapview screen
+   * Vendor detail screen
+   * Cart screen
+   * (To user info page, but this is a later feature)
+* Search screen
+    * Product detail screen
+    * Mapview screen
+* MyProduct screen
+    * Add product screen
+    * Mapview screen
+
 
 ## Wireframes
 [Add picture of your hand sketched wireframes in this section]
