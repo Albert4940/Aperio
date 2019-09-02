@@ -114,8 +114,7 @@ Aperio is the place you go to buy any local paintings or craftsmanship made with
 
 
 ## Wireframes
-[Add picture of your hand sketched wireframes in this section]
-<img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
+<img src="https://i.imgur.com/DX3Y6zU.jpg" width=600>
 
 ### [BONUS] Digital Wireframes & Mockups
 
