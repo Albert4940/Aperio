@@ -117,12 +117,13 @@ Aperio is the place you go to buy any local paintings or craftsmanship made with
 <img src="https://i.imgur.com/DX3Y6zU.jpg" width=600>
 
 ### [BONUS] Digital Wireframes & Mockups
-<img src="https://i.imgur.com/SK0SPx5.png" width=200>
-<img src="https://i.imgur.com/dSDAvk7.png" width=200>
-<img src="https://i.imgur.com/y8Vzb0B.png" width=200>
-<img src="https://i.imgur.com/pzBc37M.png" width=200>
-<img src="https://i.imgur.com/qjUbNzQ.png" width=200>
-<img src="https://i.imgur.com/1f24OLJ.png" width=200>
+<span>
+<img src="https://i.imgur.com/SK0SPx5.png" width=100>
+<img src="https://i.imgur.com/dSDAvk7.png" width=100>
+<img src="https://i.imgur.com/y8Vzb0B.png" width=100>
+<img src="https://i.imgur.com/pzBc37M.png" width=100>
+<img src="https://i.imgur.com/qjUbNzQ.png" width=100>
+<img src="https://i.imgur.com/1f24OLJ.png" width=100></span>
 
 ### [BONUS] Interactive Prototype
 
