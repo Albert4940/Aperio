@@ -134,21 +134,20 @@ Aperio is the place you go to buy any local paintings or craftsmanship made with
 ### Models
 
 Model:User
-
-| Property   | Type     | Description                              |
-| --------   | -------- | -----------------------------------      |
-| ObjectId   | String   | Unique id for User account               |
-| createdAt  | DateTime | date created user (default field)        |
-| updatedAt  | DateTime | date last updated user (default field)   |
-| Name       | String   | name of the user                         |
-| Email      | String   | Email account of the user                |
-| Password   | String   | Password of the user                     |
-| Phone      | number   | The phone number of the user             |
-| Category   | Boolean  | To determine the type of user            |
-| ProfileImg | File     | The Profile picture of the user          |
-| Address    | String   | Address of the user                      |
-| Longitude  | Double   | the current longitude of the current user|
-| Latitude   | Double   | The current latitude of the current user |
+| Property  | Type     | Description                           |
+| --------  | -------- | --------------------------            |
+| ObjectId  | String   | Unique id for User account            |
+| createdAt | DateTime | date created user (default field)     |
+|updatedAt 	| DateTime | date last updated user (default field)|
+| Name | String   | name of the user                |
+| Email     | String   | Email account of the user             |
+| Password  | String   | Password of the user                  |
+| Phone     | number   | The phone number of the user          |
+| Category  | Boolean   | To determine the type of user                      |
+| ProfileImg   | File     | The Profile picture of the user       |
+| Address    | String   | Address of the user                  |
+|Longitude | Double | the current longitude of the current user |
+| Latitude | Double | The current latitude of the current user |
 
 Model: Product
 
@@ -159,24 +158,32 @@ Model: Product
 | updatedAt | DateTime | date last updated user (default field)|
 | Product   | File     | Picture of the product                |
 | Descripton| String   | Description of the Product            |
-| Category  | String   | Category product                      |
-| Vendor    | Pointer  | To determine who's selling            |
+| Category  | Pointer   | pointer to category product                      |
+| Vendor | Pointer | To determine who's selling
 
 Model: Message
 
-| Property | Type     | Description                       |
-| -------- | -------- | ---------------------------       |
-| ObjectId | String   | Unique Id for message             |
-| createAt | DateTime | date of creation                  |
+| Property | Type   | Description |
+| -------- | ------ | ----------- |
+| ObjectId | String | Unique Id for message |
+| createAt | DateTime | date of creation |
 | updateAt | Datetime | date last updated (default field) |
-| user     | Pointer  | Pointer of the current user       |
-| vendor   | Pointer  | Pointer of the vendor             |
-| message  | String   | The message sent                  |
+| user | Pointer | Pointer of the current user |
+| vendor | Pointer | Pointer of the vendor |
+| message | String | The message sent |
+
+Model : Category
+
+| Property | Type   | Description |
+| -------- | ------ | ----------- |
+| ObjectId | String | Unique Id for category |
+| createAt | DateTime | date of creation |
+| updateAt | Datetime | date last updated (default field) |
+| category | String | The category text |
 
 ### Networking
 LoginPage Screen
 - (Read/GET) Query logged in user object
-- (Update/PUT) Update user profile image
 
 HomeScreen
 - (Create/POST) Create a new line to post a new product
@@ -184,6 +191,7 @@ HomeScreen
 
 Profil
 - (Read/GET) Query that displays the profile of the user and their product poster on the application.
+- (Update/PUT) Update user profile image
 
 Detail
 - (Read/GET) Query that displays the details of a product
