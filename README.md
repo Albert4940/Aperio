@@ -27,9 +27,7 @@ Aperio is the place you go to buy any local paintings or craftsmanship made with
 
 * Nearby vendors can be found on a map
 * User can browse a vendor's products
-* User can add product to cart
-* User can see cart contents
-* User can pay for product via external payment providers.
+* User can message vendor to negociate
 * Vendor can add product(with product details)
 * Vendor can create an account
 * Vendor can login to account
@@ -39,6 +37,9 @@ Aperio is the place you go to buy any local paintings or craftsmanship made with
 
 * User can search by category or region
 * User can search for a specific vendor
+* User can add product to cart
+* User can see cart contents
+* User can pay for product via external payment providers.
 * User can signup/login to app
 * User stay connect after leaving the app(session)
 * User can save favorited items
@@ -114,6 +115,7 @@ Aperio is the place you go to buy any local paintings or craftsmanship made with
 
 
 ## Wireframes
+
 <img src="https://i.imgur.com/DX3Y6zU.jpg" width=600>
 
 ### [BONUS] Digital Wireframes & Mockups
@@ -128,10 +130,66 @@ Aperio is the place you go to buy any local paintings or craftsmanship made with
 ### [BONUS] Interactive Prototype
 
 ## Schema 
-[This section will be completed in Unit 9]
+
 ### Models
-[Add table of models]
+
+Model:User
+
+| Property   | Type     | Description                              |
+| --------   | -------- | -----------------------------------      |
+| ObjectId   | String   | Unique id for User account               |
+| createdAt  | DateTime | date created user (default field)        |
+| updatedAt  | DateTime | date last updated user (default field)   |
+| Name       | String   | name of the user                         |
+| Email      | String   | Email account of the user                |
+| Password   | String   | Password of the user                     |
+| Phone      | number   | The phone number of the user             |
+| Category   | Boolean  | To determine the type of user            |
+| ProfileImg | File     | The Profile picture of the user          |
+| Address    | String   | Address of the user                      |
+| Longitude  | Double   | the current longitude of the current user|
+| Latitude   | Double   | The current latitude of the current user |
+
+Model: Product
+
+| Property  | Type     | Description                           |
+| --------  | -------- | ---------------------------           |
+| ObjectId  | String   | Unique Id for a product               |
+| createdAt | DateTime | date created user (default field)     |
+| updatedAt | DateTime | date last updated user (default field)|
+| Product   | File     | Picture of the product                |
+| Descripton| String   | Description of the Product            |
+| Category  | String   | Category product                      |
+| Vendor    | Pointer  | To determine who's selling            |
+
+Model: Message
+
+| Property | Type     | Description                       |
+| -------- | -------- | ---------------------------       |
+| ObjectId | String   | Unique Id for message             |
+| createAt | DateTime | date of creation                  |
+| updateAt | Datetime | date last updated (default field) |
+| user     | Pointer  | Pointer of the current user       |
+| vendor   | Pointer  | Pointer of the vendor             |
+| message  | String   | The message sent                  |
+
 ### Networking
-- [Add list of network requests by screen ]
-- [Create basic snippets for each Parse network request]
-- [OPTIONAL: List endpoints if using existing API such as Yelp]
+LoginPage Screen
+- (Read/GET) Query logged in user object
+- (Update/PUT) Update user profile image
+
+HomeScreen
+- (Create/POST) Create a new line to post a new product
+- (Read/GET) Query that lists the product poster the artist
+
+Profil
+- (Read/GET) Query that displays the profile of the user and their product poster on the application.
+
+Detail
+- (Read/GET) Query that displays the details of a product
+
+Sign In Screen
+- (Create/POST) Create a new user object
+
+Pre-detail
+- (Read/GET) Query that lists the product poster by the artist
