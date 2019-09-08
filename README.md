@@ -134,11 +134,12 @@ Aperio is the place you go to buy any local paintings or craftsmanship made with
 ### Models
 
 Model:User
+
 | Property  | Type     | Description                           |
 | --------  | -------- | --------------------------            |
 | ObjectId  | String   | Unique id for User account            |
 | createdAt | DateTime | date created user (default field)     |
-|updatedAt 	| DateTime | date last updated user (default field)|
+| updatedAt 	| DateTime | date last updated user (default field)|
 | Name | String   | name of the user                |
 | Email     | String   | Email account of the user             |
 | Password  | String   | Password of the user                  |
@@ -146,7 +147,7 @@ Model:User
 | Category  | Boolean   | To determine the type of user                      |
 | ProfileImg   | File     | The Profile picture of the user       |
 | Address    | String   | Address of the user                  |
-|Longitude | Double | the current longitude of the current user |
+| Longitude | Double | the current longitude of the current user |
 | Latitude | Double | The current latitude of the current user |
 
 Model: Product
