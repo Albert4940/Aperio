@@ -128,7 +128,10 @@ Aperio is the place you go to buy any local paintings or craftsmanship made with
 <img src="https://i.imgur.com/1f24OLJ.png" width=100></span>
 
 ### [BONUS] Interactive Prototype
-https://www.figma.com/file/dBvg7Cl4O4yo14Hh0Z2X0L/AperioProject
+[Aperio Figma link](https://www.figma.com/file/dBvg7Cl4O4yo14Hh0Z2X0L/AperioProject)
+
+<img src="https://i.imgur.com/xvwUmCx.gif">
+
 ## Schema 
 
 ### Models
