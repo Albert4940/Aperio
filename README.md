@@ -133,12 +133,13 @@ Aperio is the place you go to buy any local paintings or craftsmanship made with
 
 ### Models
 
-Model:User
+Model: User
+
 | Property  | Type     | Description                           |
-| --------  | -------- | --------------------------            |
+| --------  | -------- | --------------------------------      |
 | ObjectId  | String   | Unique id for User account            |
 | createdAt | DateTime | date created user (default field)     |
-| updatedAt 	| DateTime | date last updated user (default field)|
+| updatedAt 	| DateTime | date last updated user (default field) |
 | Name | String   | name of the user                |
 | Email     | String   | Email account of the user             |
 | Password  | String   | Password of the user                  |
